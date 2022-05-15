@@ -48,18 +48,19 @@ flex-wrap: wrap;
 display: inline-block;
 margin-right: 30px;
 margin-bottom: 30px;
-&:nth-child(3 + n) {
-    margin-bottom: 0;
-    } 
     
-    &:nth-child(3n) {
+&:nth-child(3n) {
     margin-right: 0;
     }
     
-    &:hover .thumb-overlay {
+&:hover .thumb-overlay {
     transform: translateY(0);
     }
 }
+
+.card-flex:nth-child(3 + n) {
+    margin-bottom: 0;
+    } 
 
 .cards-cards {
 padding-left: 24px;

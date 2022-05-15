@@ -22,11 +22,10 @@ font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 letter-spacing: 0.06em;
-
-    color: var(--primary-light-color);
-
 margin-bottom: 30px;
 margin-top: 0;
+
+color: var(--primary-light-color);
 }
 
 .hero-button {
@@ -40,8 +39,12 @@ line-height: 1.875;
 letter-spacing: 0.06em;
 border-radius: 4px;
 border: 1px solid transparent;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-light-color);
     background-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--btcolor-hero);
+    }
 }
